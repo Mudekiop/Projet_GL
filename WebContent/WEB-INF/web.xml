@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0" id="WebApp_ID">
+
+
+	<display-name>Projet_GL_2</display-name>
+
+
+	<servlet>
+		<servlet-name>PublicationController</servlet-name>
+		<servlet-class>com.servlets.PublicationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicationController</servlet-name>
+		<url-pattern>/publierAudit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Admin</servlet-name>
+		<servlet-class>com.servlets.Admin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Admin</servlet-name>
+		<url-pattern>/accueilAdmin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminRole</servlet-name>
+		<servlet-class>com.servlets.AdminRole</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminRole</servlet-name>
+		<url-pattern>/editerRole</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ResultatController</servlet-name>
+		<servlet-class>com.servlets.ResultatController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResultatController</servlet-name>
+		<url-pattern>/Resultat</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PageResultatController</servlet-name>
+		<servlet-class>com.servlets.PageResultatController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PageResultatController</servlet-name>
+		<url-pattern>/accueilResultat</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>accueilController</servlet-name>
+		<servlet-class>com.servlets.accueilController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>accueilController</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>auditsController</servlet-name>
+		<servlet-class>com.servlets.auditsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>auditsController</servlet-name>
+		<url-pattern>/audits</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>connexionController</servlet-name>
+		<servlet-class>com.servlets.connexionController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>connexionController</servlet-name>
+		<url-pattern>/connexion</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>monProfilController</servlet-name>
+		<servlet-class>com.servlets.monProfilController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>monProfilController</servlet-name>
+		<url-pattern>/monProfil</url-pattern>
+	</servlet-mapping>
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+
+</web-app>

@@ -1,0 +1,10 @@
+package com.beans;
+
+public enum Role {
+	ADMINISTRATEUR,
+	RESPONSABLE_OPTION,
+	RESPONSABLE_UE,
+	ENCADRANT_MATIERE,
+	ELEVE,
+	INVITE
+}
